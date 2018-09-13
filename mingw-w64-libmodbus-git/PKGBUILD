@@ -4,13 +4,14 @@
 _realname=libmodbus
 pkgbase=mingw-w64-${_realname}-git
 pkgname="${MINGW_PACKAGE_PREFIX}-${_realname}-git"
-pkgver=658.0e2f470
+pkgver=752.ddac0cf
 pkgrel=1
 pkgdesc="A Modbus library for Linux, Mac OS X, FreeBSD, QNX and Win32 (mingw-w64)"
 url="http://libmodbus.org/"
 arch=('any')
 license=('LGPL')
-makedepends=("git" "asciidoc"
+makedepends=("git"
+             # "asciidoc"
              "${MINGW_PACKAGE_PREFIX}-gcc"
              "${MINGW_PACKAGE_PREFIX}-pkg-config")
 options=('strip' 'staticlibs' '!buildflags' '!emptydirs' '!debug')
